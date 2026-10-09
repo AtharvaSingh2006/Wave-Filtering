@@ -1,0 +1,10 @@
+Wave Filtering: Sri Lanka Teleseismic Waveform Processing
+
+This project provides a Python and ObsPy workflow for studying teleseismic earthquakes recorded at the Sri Lankan stations PALK (II), MALK (GE), and HALK (GE). It screens global earthquake catalogs for candidate SKS, SKKS, and PKS arrivals; downloads two-hour, three-component waveform cuts and StationXML metadata; corrects instrument response; rotates components using sensor orientation; and filters the data for inspection.
+
+The project generates event record sections, focused core-phase plots, per-event station stacks, and a combined multi-event stack using a 20–100 second period band. A separate workflow processes 10-hour recordings from the temporary GEOFON 1A network and explores XKS shear-wave splitting with SWSPy, polarization diagnostics, and optional CNN support.
+
+Earthquake and phase screens are candidates rather than confirmed picks. Current splitting measurements are preliminary and do not yet support validated anisotropy or accepted fast-axis directions. CNN scores are also treated as supporting information because the inputs are not calibrated to the model's training domain and the example has no hand-labelled data for accuracy evaluation.
+
+The workflow is implemented as regular Python scripts with a project-specific environment described in requirements.txt. Raw downloads, processed waveforms, and analysis figures are organized in separate data and results folders.
+

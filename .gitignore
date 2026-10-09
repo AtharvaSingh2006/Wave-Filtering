@@ -1,0 +1,66 @@
+# Python environment and cache
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Downloaded and processed waveforms
+/data/incoming/
+/data/cuts_2h/
+/data/processed/
+/data/processed_20_100s/
+/data/processed_1a_10h/
+/data/sl_1a_continuous/
+/data/focused_xks/
+/data/focused_xks_1a/
+/data/focused_xks_cnn_1a/
+/data/cnn_sws_input/
+/data/*.zip
+
+# Generated plots, reports, and result tables
+/results/previous_outputs_*/
+/results/**/*.png
+/results/**/*.pdf
+/results/**/*.csv
+/results/**/*.json
+
+# Temporary files
+/tmp/
+.DS_Store
+Thumbs.db
+# IDE and editor settings
+.vscode/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Python test and type-check caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+# IDE settings
+.vscode/
+
+# Temporary files
+/tmp/
+# Large waveform datasets
+/data/
+
+# Generated results and analysis outputs
+/results/
+
+# Temporary files
+/tmp/
+
+# IDE settings
+.vscode/
+
+# Python virtual environment
+.venv/
+venv/
